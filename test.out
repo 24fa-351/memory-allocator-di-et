@@ -1,0 +1,226 @@
+memtest.c: 86 conducting 10 tests
+memtest.c: 87 test string: (12 long) 'Hello world!'
+memtest.c: 94 begin test [  0]
+memtest.c: 97 chosen_block_size: 11
+memtest.c:125 stored in [  0]: 0x7fffebe68000 'Hello worl'
+memtest.c:134 index_to_realloc: 0
+
+memtest.c:138 reallocating [  0] 0x7fffebe68000 'Hello worl'
+memtest.c:147 new size: 23
+memtest.c:178 end test [  0]
+
+
+memtest.c: 94 begin test [  1]
+memtest.c: 97 chosen_block_size: 10
+memtest.c:125 stored in [  1]: 0x7fffebe68000 'Hello wor'
+memtest.c:134 index_to_realloc: 1
+
+memtest.c:138 reallocating [  1] 0x7fffebe68000 'Hello wor'
+memtest.c:147 new size: 48
+memtest.c:178 end test [  1]
+
+
+memtest.c: 94 begin test [  2]
+memtest.c: 97 chosen_block_size: 10
+memtest.c:125 stored in [  2]: 0x7fffebe68000 'Hello wor'
+memtest.c:178 end test [  2]
+
+
+memtest.c: 94 begin test [  3]
+memtest.c: 97 chosen_block_size: 13
+memtest.c:102 large allocation: 738089
+memtest.c:125 stored in [  3]: 0x7fffebe6a000 'Hello world!'
+
+memtest.c:166 randomly freeing [  2] 0x7fffebe68000 'Hello wor'
+memtest.c:172 freed [  2] 0x7fffebe68000
+memtest.c:178 end test [  3]
+
+
+memtest.c: 94 begin test [  4]
+memtest.c: 97 chosen_block_size: 4
+memtest.c:125 stored in [  4]: 0x7fffebe68000 'Hel'
+
+memtest.c:166 randomly freeing [  0] 0x7fffebe6800b 'Hello worl'
+memtest.c:172 freed [  0] 0x7fffebe6800b
+memtest.c:178 end test [  4]
+
+
+memtest.c: 94 begin test [  5]
+memtest.c: 97 chosen_block_size: 12
+memtest.c:125 stored in [  5]: 0x7fffebe6800b 'Hello world'
+memtest.c:134 index_to_realloc: 3
+
+memtest.c:138 reallocating [  3] 0x7fffebe6a000 'Hello world!'
+memtest.c:147 new size: 10
+memtest.c:178 end test [  5]
+
+
+memtest.c: 94 begin test [  6]
+memtest.c: 97 chosen_block_size: 9
+memtest.c:125 stored in [  6]: 0x7fffebe68052 'Hello wo'
+memtest.c:134 index_to_realloc: 5
+
+memtest.c:138 reallocating [  5] 0x7fffebe6800b 'Hello world'
+memtest.c:147 new size: 14
+memtest.c:178 end test [  6]
+
+
+memtest.c: 94 begin test [  7]
+memtest.c: 97 chosen_block_size: 7
+memtest.c:125 stored in [  7]: 0x7fffebe6800b 'Hello '
+memtest.c:178 end test [  7]
+
+
+memtest.c: 94 begin test [  8]
+memtest.c: 97 chosen_block_size: 5
+Block   0: size=   11, address=0x7fffebe68000, is_free=0
+Block   1: size=   23, address=0x7fffebe6800b, is_free=0
+Block   2: size= 4062, address=0x7fffebe68022, is_free=1
+Block   3: size= 4096, address=0x7fffebe69000, is_free=0
+Block   0: size=   10, address=0x7fffebe68000, is_free=0
+Block   1: size=   23, address=0x7fffebe6800b, is_free=0
+Block   2: size= 4062, address=0x7fffebe68022, is_free=1
+Block   3: size= 4096, address=0x7fffebe69000, is_free=0
+Block   4: size=    1, address=0x7fffebe6800a, is_free=1
+Block   0: size=   10, address=0x7fffebe68000, is_free=0
+Block   1: size=   23, address=0x7fffebe6800b, is_free=0
+Block   2: size=   48, address=0x7fffebe68022, is_free=0
+Block   3: size= 4096, address=0x7fffebe69000, is_free=0
+Block   4: size=    1, address=0x7fffebe6800a, is_free=1
+Block   5: size= 4014, address=0x7fffebe68052, is_free=1
+Block   0: size=   10, address=0x7fffebe68000, is_free=0
+Block   1: size=   23, address=0x7fffebe6800b, is_free=0
+Block   2: size=   48, address=0x7fffebe68022, is_free=0
+Block   3: size= 4096, address=0x7fffebe69000, is_free=0
+Block   4: size=    1, address=0x7fffebe6800a, is_free=1
+Block   5: size= 4014, address=0x7fffebe68052, is_free=1
+Block   0: size=    4, address=0x7fffebe68000, is_free=0
+Block   1: size=   23, address=0x7fffebe6800b, is_free=0
+Block   2: size=   48, address=0x7fffebe68022, is_free=0
+Block   3: size= 4096, address=0x7fffebe69000, is_free=0
+Block   4: size=    1, address=0x7fffebe6800a, is_free=1
+Block   5: size= 4014, address=0x7fffebe68052, is_free=1
+Block   6: size=738089, address=0x7fffebe6a000, is_free=0
+Block   7: size=    6, address=0x7fffebe68004, is_free=1
+Block   0: size=    4, address=0x7fffebe68000, is_free=0
+Block   1: size=   12, address=0x7fffebe6800b, is_free=0
+Block   2: size=   48, address=0x7fffebe68022, is_free=0
+Block   3: size= 4096, address=0x7fffebe69000, is_free=0
+Block   4: size=    1, address=0x7fffebe6800a, is_free=1
+Block   5: size= 4014, address=0x7fffebe68052, is_free=1
+Block   6: size=738089, address=0x7fffebe6a000, is_free=0
+Block   7: size=    6, address=0x7fffebe68004, is_free=1
+Block   8: size=   11, address=0x7fffebe68017, is_free=1
+Block   0: size=    4, address=0x7fffebe68000, is_free=0
+Block   1: size=   12, address=0x7fffebe6800b, is_free=0
+Block   2: size=   48, address=0x7fffebe68022, is_free=0
+Block   3: size= 4096, address=0x7fffebe69000, is_free=0
+Block   4: size=    1, address=0x7fffebe6800a, is_free=1
+Block   5: size=    9, address=0x7fffebe68052, is_free=0
+Block   6: size=738089, address=0x7fffebe6a000, is_free=0
+Block   7: size=    6, address=0x7fffebe68004, is_free=1
+Block   8: size=   11, address=0x7fffebe68017, is_free=1
+Block   9: size= 4005, address=0x7fffebe6805b, is_free=1
+Block   0: size=    4, address=0x7fffebe68000, is_free=0
+Block   1: size=   12, address=0x7fffebe6800b, is_free=0
+Block   2: size=   48, address=0x7fffebe68022, is_free=0
+Block   3: size= 4096, address=0x7fffebe69000, is_free=0
+Block   4: size=    1, address=0x7fffebe6800a, is_free=1
+Block   5: size=    9, address=0x7fffebe68052, is_free=0
+Block   6: size=738089, address=0x7fffebe6a000, is_free=0
+Block   7: size=    6, address=0x7fffebe68004, is_free=1
+Block   8: size=   11, address=0x7fffebe68017, is_free=1
+Block   9: size=   14, address=0x7fffebe6805b, is_free=0
+Block  10: size= 3991, address=0x7fffebe68069, is_free=1
+Block   0: size=    4, address=0x7fffebe68000, is_free=0
+Block   1: size=    7, address=0x7fffebe6800b, is_free=0
+Block   2: size=   48, address=0x7fffebe68022, is_free=0
+Block   3: size= 4096, address=0x7fffebe69000, is_free=0
+Block   4: size=    1, address=0x7fffebe6800a, is_free=1
+Block   5: size=    9, address=0x7fffebe68052, is_free=0
+Block   6: size=738089, address=0x7fffebe6a000, is_free=0
+Block   7: size=    6, address=0x7fffebe68004, is_free=1
+Block   8: size=   11, address=0x7fffebe68017, is_free=1
+Block   9: size=   14, address=0x7fffebe6805b, is_free=0
+Block  10: size= 3991, address=0x7fffebe68069, is_free=1
+Block  11: size=    5, address=0x7fffebe68012, is_free=1
+Block   0: size=    4, address=0x7fffebe6800memtest.c:125 stored in [  8]: 0x7fffebe68004 'Hell'
+memtest.c:134 index_to_realloc: 4
+
+memtest.c:138 reallocating [  4] 0x7fffebe68000 'Hel'
+memtest.c:147 new size: 14
+memtest.c:178 end test [  8]
+
+
+memtest.c: 94 begin test [  9]
+memtest.c: 97 chosen_block_size: 10
+memtest.c:125 stored in [  9]: 0x7fffebe68017 'Hello wor'
+
+memtest.c:166 randomly freeing [  7] 0x7fffebe6800b 'Hello '
+memtest.c:172 freed [  7] 0x7fffebe6800b
+memtest.c:178 end test [  9]
+
+
+
+
+
+Cleaning up...
+memtest.c:198 already freed [  0] (is NULL)
+memtest.c:187 freeing [  1] 0x7fffebe68022 'Hello wor'
+memtest.c:193 freed   [  1] 0x7fffebe68022
+memtest.c:198 already freed [  2] (is NULL)
+memtest.c:187 freeing [  3] 0x7fffebe6a000 'Hello wor'
+memtest.c:193 freed   [  3] 0x7fffebe6a000
+memtest.c:187 freeing [  4] 0x7fffebe68069 'Hel'
+memtest.c:193 freed   [  4] 0x7fffebe68069
+memtest.c:187 freeing [  5] 0x7fffebe6805b 'Hello world'
+memtest.c:193 freed   [  5] 0x7fffebe6805b
+memtest.c:187 freeing [  6] 0x7fffebe68052 'Hello wo'
+memtest.c:193 freed   [  6] 0x7fffebe68052
+memtest.c:198 already freed [  7] (is NULL)
+memtest.c:187 freeing [  8] 0x7fffebe68004 'Hell'
+memtest.c:193 freed   [  8] 0x7fffebe68004
+memtest.c:187 freeing [  9] 0x7fffebe68017 'Hello wor'
+memtest.c:193 freed   [  9] 0x7fffebe68017
+0, is_free=0
+Block   1: size=    7, address=0x7fffebe6800b, is_free=0
+Block   2: size=   48, address=0x7fffebe68022, is_free=0
+Block   3: size= 4096, address=0x7fffebe69000, is_free=0
+Block   4: size=    1, address=0x7fffebe6800a, is_free=1
+Block   5: size=    9, address=0x7fffebe68052, is_free=0
+Block   6: size=738089, address=0x7fffebe6a000, is_free=0
+Block   7: size=    5, address=0x7fffebe68004, is_free=0
+Block   8: size=   11, address=0x7fffebe68017, is_free=1
+Block   9: size=   14, address=0x7fffebe6805b, is_free=0
+Block  10: size= 3991, address=0x7fffebe68069, is_free=1
+Block  11: size=    5, address=0x7fffebe68012, is_free=1
+Block  12: size=    1, address=0x7fffebe68009, is_free=1
+Block   0: size=    4, address=0x7fffebe68000, is_free=0
+Block   1: size=    7, address=0x7fffebe6800b, is_free=0
+Block   2: size=   48, address=0x7fffebe68022, is_free=0
+Block   3: size= 4096, address=0x7fffebe69000, is_free=0
+Block   4: size=    1, address=0x7fffebe6800a, is_free=1
+Block   5: size=    9, address=0x7fffebe68052, is_free=0
+Block   6: size=738089, address=0x7fffebe6a000, is_free=0
+Block   7: size=    5, address=0x7fffebe68004, is_free=0
+Block   8: size=   11, address=0x7fffebe68017, is_free=1
+Block   9: size=   14, address=0x7fffebe6805b, is_free=0
+Block  10: size=   14, address=0x7fffebe68069, is_free=0
+Block  11: size=    5, address=0x7fffebe68012, is_free=1
+Block  12: size=    1, address=0x7fffebe68009, is_free=1
+Block  13: size= 3977, address=0x7fffebe68077, is_free=1
+Block   0: size=    4, address=0x7fffebe68000, is_free=1
+Block   1: size=    7, address=0x7fffebe6800b, is_free=0
+Block   2: size=   48, address=0x7fffebe68022, is_free=0
+Block   3: size= 4096, address=0x7fffebe69000, is_free=0
+Block   4: size=    1, address=0x7fffebe6800a, is_free=1
+Block   5: size=    9, address=0x7fffebe68052, is_free=0
+Block   6: size=738089, address=0x7fffebe6a000, is_free=0
+Block   7: size=    5, address=0x7fffebe68004, is_free=0
+Block   8: size=   10, address=0x7fffebe68017, is_free=0
+Block   9: size=   14, address=0x7fffebe6805b, is_free=0
+Block  10: size=   14, address=0x7fffebe68069, is_free=0
+Block  11: size=    5, address=0x7fffebe68012, is_free=1
+Block  12: size=    1, address=0x7fffebe68009, is_free=1
+Block  13: size= 3977, address=0x7fffebe68077, is_free=1
+Block  14: size=    1, address=0x7fffebe68021, is_free=1
